@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import MainPage from './pages/mainPage';
+import { Switch } from 'react-router';
+import MainPage from './pages/mainPage/mainPage';
 import RestApiPage from './pages/restApi/RestApi';
+import LoginPage from './pages/loginPage/loginPage';
+import RegisterPage from './pages/registerPage/registerPage';
 import _Fetch from './common/fetch';
 import { SERVER_URL } from './common/settings';
 import { setItem } from './common/StorageUtils';
@@ -49,10 +52,12 @@ class Routers extends React.Component {
       if (!isLoaded) return null;
       return (
         <Router>
-          <div>
+          <Switch>
             <Route exact path="/" component={MainPage} />
             <Route path="/restapi" component={RestApiPage} />
-          </div>
+            <Route path="/login" component={LoginPage} />
+            <Route path="/register" component={RegisterPage} />
+          </Switch>
         </Router>
       );
     }
