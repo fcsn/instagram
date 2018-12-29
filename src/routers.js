@@ -5,6 +5,7 @@ import MainPage from './pages/mainPage/mainPage';
 import RestApiPage from './pages/restApi/RestApi';
 import LoginPage from './pages/loginPage/loginPage';
 import RegisterPage from './pages/registerPage/registerPage';
+import PostPage from './pages/postPage/postPage';
 import _Fetch from './common/fetch';
 import { SERVER_URL } from './common/settings';
 import { setItem } from './common/StorageUtils';
@@ -57,6 +58,7 @@ class Routers extends React.Component {
             <Route path="/restapi" component={RestApiPage} />
             <Route path="/login" component={LoginPage} />
             <Route path="/register" component={RegisterPage} />
+            <Route path="/post" component={PostPage} />
           </Switch>
         </Router>
       );

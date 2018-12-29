@@ -6,8 +6,6 @@ import Button from '../../components/Button/Button';
 import Logo from '../../static/img/logo.png';
 
 const Box = styled.div`
-  background: ${props => props.color || 'blue'};
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +26,7 @@ class MainContainer extends React.Component {
   render() {
     const { handleGoLogin, handleGoRegister } = this;
     return (
-      <Box color="white">
+      <Box>
         <img src={Logo} width={94} alt="logo" style={{ marginBottom: '236px' }} />
         <Button handleClick={handleGoLogin}>Login</Button>
         <Button handleClick={handleGoRegister} borderColor="#4a90e2" textColor="#4a90e2">Register</Button>

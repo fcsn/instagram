@@ -6,26 +6,27 @@ const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  outline: 1px solid blue;
 `;
 
-class MainWrapper extends React.Component {
+class PostWrapper extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <Wrapper>
+      <div>
         { children }
-      </Wrapper>
+      </div>
     );
   }
 }
 
-MainWrapper.propTypes = {
+PostWrapper.propTypes = {
   children: PropTypes.object,
 };
 
-MainWrapper.defaultProps = {
+PostWrapper.defaultProps = {
   children: null,
 };
 
-export default MainWrapper;
+export default PostWrapper;
