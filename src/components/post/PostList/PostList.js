@@ -2,33 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Logo from '../../../static/img/logo.png';
-
-const PostItemWrapper = styled.div`
-  margin-top: 13px;
-  margin-left: 7px;
-  margin-right: 7px;
-  height: 1000px;
-  outline: 1px solid red;
-  width: calc(100vw - 14px);
-`;
+import PostItem from '../PostItem/PostItem';
 
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 30px;
-  outline: 1px solid red;
 `;
 
-const PostItem = ({
-  name, location, content, tags,
-}) => {
-  return (
-    <PostItemWrapper>
-      {`${name}cfwefiwjifjwijwpeijpwijpijwp`}
-    </PostItemWrapper>
-  );
-};
+const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 class PostList extends React.Component {
   state = {
@@ -61,7 +47,9 @@ class PostList extends React.Component {
     });
     return (
       <Box>
-        <img src={Logo} width={94} alt="logo" />
+        <Header>
+          <img src={Logo} width={94} alt="logo" />
+        </Header>
         {postList}
       </Box>
     );
@@ -72,20 +60,6 @@ PostList.propTypes = {
 };
 
 PostList.defaultProps = {
-};
-
-PostItem.propTypes = {
-  name: PropTypes.string,
-  location: PropTypes.string,
-  content: PropTypes.string,
-  tags: PropTypes.array,
-};
-
-PostItem.defaultProps = {
-  name: null,
-  location: null,
-  content: null,
-  tags: [],
 };
 
 export default PostList;
