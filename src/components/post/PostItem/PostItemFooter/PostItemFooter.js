@@ -10,7 +10,7 @@ import Like from '../../../../static/img/like.png';
 // font-style: normal;
 // font-stretch: normal;
 const FooterWrapper = styled.div`
-    padding: 0 15px;
+    padding: 12px 15px 8px 15px;
     font-family: AppleSDGothicNeo;
     font-size: 14px;
     font-weight: normal;
@@ -22,45 +22,58 @@ const FooterWrapper = styled.div`
 
 const NameWrapper = styled.div`
     height: 22px;
-    outline: 1px solid green;
     margin-top: 11px;
+    color: #2c2c2c;
 `;
 
 const ContentWrapper = styled.div`
-    outline: 1px solid blue;
+    padding: 5px 0;
+    color: #aaaaaa;
 `;
 
 const TagWrapper = styled.div`
-    outline: 1px solid red;
+    padding: 2.5px 0;
     margin-top: 4px;
     color: #6e8f9c;
 `;
 
 const ViewComment = styled.div`
-    outline: 1px solid gray;
+    padding: 2.5px 0;
     margin-top: 4px;
     height: 22px;
     color: #aaaaaa;
 `;
 
-const Button = (logo) => {
-  const isLike = logo === 'like' ? Like : Comment;
+const LikeButton = () => {
   const buttonStyle = {
     height: '14px',
     width: '16px',
   };
   return (
-    <img style={buttonStyle} src={isLike} alt={Like ? 'like' : 'comment'} />
+    <img style={buttonStyle} src={Like} alt="like" />
+  );
+};
+
+const CommentButton = () => {
+  const buttonStyle = {
+    height: '14px',
+    width: '16px',
+    marginLeft: '16px',
+  };
+  return (
+    <img style={buttonStyle} src={Comment} alt="comment" />
   );
 };
 
 const PostItemFooter = ({
   content, tags, name,
 }) => {
+  const like = 'like';
   return (
     <FooterWrapper>
-      <div style={{ outline: '1px solid coral', height: '14px' }}>
-        <Button />
+      <div style={{ height: '14px' }}>
+        <LikeButton />
+        <CommentButton />
       </div>
       <NameWrapper>
         {name}
