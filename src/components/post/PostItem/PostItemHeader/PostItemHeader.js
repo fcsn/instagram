@@ -20,6 +20,7 @@ const ItemHeader = styled.div`
 `;
 
 const LocationWrapper = styled.div`
+    display: flex;
     font-family: AppleSDGothicNeo;
     font-size: 13px;
     font-weight: normal;
@@ -30,6 +31,8 @@ const LocationWrapper = styled.div`
 `;
 
 const ImageWrapper = styled.div`
+    width: 38px;
+    height: 38px;
 `;
 
 const CenterWrapper = styled.div`
@@ -42,25 +45,46 @@ const OptionWrapper = styled.div`
     
 `;
 
+const CircleWrapper = styled.div`
+    margin-lef
+`;
+const Circle = styled.span`
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+`;
+
+const imgStyle = {
+  width: '100%',
+  height: '100%',
+};
+
 const PostItemHeader = ({
   name, location,
 }) => {
   return (
     <ItemHeader>
       <ImageWrapper>
-        <img src={Location} width={38} height={38} alt="profile" />
+        <img src={Location} style={imgStyle} alt="profile" />
       </ImageWrapper>
 
       <CenterWrapper>
         <Name>{name}</Name>
         <LocationWrapper>
-          <img width={8} src={Location} alt="location" />
-          <span style={{ maxHeight: '100%', marginLeft: '4px' }}>{location}</span>
+          <img width={8} height={10} style={{ marginTop: '3px' }} src={Location} alt="location" />
+          <div style={{ height: '100%', marginLeft: '4px' }}>{location}</div>
         </LocationWrapper>
       </CenterWrapper>
 
       <OptionWrapper>
-        <div>O O O</div>
+        <CircleWrapper>
+          <Circle />
+          <Circle />
+          <Circle />
+        </CircleWrapper>
       </OptionWrapper>
     </ItemHeader>
   );
