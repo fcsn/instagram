@@ -4,11 +4,6 @@ import styled from 'styled-components';
 import Comment from '../../../../static/img/comment.png';
 import Like from '../../../../static/img/like.png';
 
-// font-family: AppleSDGothicNeo;
-// font-size: 13px;
-// font-weight: normal;
-// font-style: normal;
-// font-stretch: normal;
 const FooterWrapper = styled.div`
     padding: 12px 15px 8px 15px;
     font-family: AppleSDGothicNeo;

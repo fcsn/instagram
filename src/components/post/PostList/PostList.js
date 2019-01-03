@@ -25,6 +25,18 @@ class PostList extends React.Component {
         content: 'the edge of New Zealand! we\'re so excited! i will remember this amzing view forever.',
         tags: ['#newzealand', '#sight', '#family'],
         id: 1,
+      }, {
+        name: 'charlie',
+        location: 'Kauai, Hawaii',
+        content: 'the edge of New Zealand! we\'re so excited! i will remember this amzing view forever.',
+        tags: ['#newzealand', '#sight', '#family'],
+        id: 2,
+      }, {
+        name: 'cooler',
+        location: 'Kauai, Hawaii',
+        content: 'the edge of New Zealand! we\'re so excited! i will remember this amzing view forever.',
+        tags: ['#newzealand', '#sight', '#family'],
+        id: 3,
       },
     ],
   };

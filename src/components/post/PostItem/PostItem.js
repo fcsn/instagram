@@ -8,6 +8,7 @@ const PostItemWrapper = styled.div`
   margin-top: 13px;
   margin-left: 7px;
   margin-right: 7px;
+  margin-bottom: 16px;
   border-radius: 5px;
   border: 1px solid white;
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.03);

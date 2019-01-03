@@ -42,12 +42,15 @@ const CenterWrapper = styled.div`
 `;
 
 const OptionWrapper = styled.div`
-    
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
 `;
 
 const CircleWrapper = styled.div`
-    margin-lef
+    margin-top: 6px;
 `;
+
 const Circle = styled.span`
     height: 5px;
     width: 5px;
@@ -80,6 +83,7 @@ const PostItemHeader = ({
       </CenterWrapper>
 
       <OptionWrapper>
+        <div />
         <CircleWrapper>
           <Circle />
           <Circle />
