@@ -7,6 +7,7 @@ import LoginPage from './pages/loginPage/loginPage';
 import RegisterPage from './pages/registerPage/registerPage';
 import SearchPage from './pages/searchPage/searchPage';
 import PostPage from './pages/postPage/postPage';
+import ProfilePage from './pages/profilePage/profilePage';
 import _Fetch from './common/fetch';
 import { SERVER_URL } from './common/settings';
 import { setItem } from './common/StorageUtils';
@@ -61,6 +62,7 @@ class Routers extends React.Component {
             <Route path="/register" component={RegisterPage} />
             <Route path="/post" component={PostPage} />
             <Route path="/search" component={SearchPage} />
+            <Route path="/profile" component={ProfilePage} />
           </Switch>
         </Router>
       );

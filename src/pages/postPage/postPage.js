@@ -5,7 +5,9 @@ import PostContainer from '../../containers/postContainer/postContainer';
 class MainPage extends React.Component {
   render() {
     return (
-      <PostContainer />
+      <PostWrapper>
+        <PostContainer />
+      </PostWrapper>
     );
   }
 }

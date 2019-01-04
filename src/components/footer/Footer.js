@@ -22,39 +22,20 @@ const FooterWrapper = styled.div`
     justify-content: space-around;
 `;
 
+const imgList = [Home, Search, Plus, Heart, Profile];
+
+const ButtonList = imgList.map((img) => {
+  return (
+    <div>
+      <NaviButton imgName={img} alt="naviImg" />
+    </div>
+  );
+});
+
 const Footer = () => {
   return (
     <FooterWrapper>
-      <div>
-        <NaviButton
-          imgName={Home}
-          alt="home"
-        />
-      </div>
-      <div>
-        <NaviButton
-          imgName={Search}
-          alt="search"
-        />
-      </div>
-      <div>
-        <NaviButton
-          imgName={Plus}
-          alt="plus"
-        />
-      </div>
-      <div>
-        <NaviButton
-          imgName={Heart}
-          alt="heart"
-        />
-      </div>
-      <div>
-        <NaviButton
-          imgName={Profile}
-          alt="profile"
-        />
-      </div>
+      {ButtonList}
     </FooterWrapper>
   );
 };

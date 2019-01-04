@@ -6,7 +6,7 @@ class PostWrapper extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <div style={{ height: '100vh', width: '100vw' }}>
         { children }
       </div>
     );
