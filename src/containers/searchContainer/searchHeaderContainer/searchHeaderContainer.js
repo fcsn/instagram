@@ -6,8 +6,8 @@ import SearchInput from '../../../elements/SearchInput/SearchInput';
 const HeaderWrapper = styled.div`
   height: 64px;
   width: 100%;
-  outline: 1px solid red;
   display: flex;
+  border-bottom: 1px solid #ececec;
 `;
 
 const CancelButton = styled.div`

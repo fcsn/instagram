@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SearchHeaderContainer from './searchHeaderContainer/searchHeaderContainer';
 import SearchResultList from './searchResultList/searchResultList';
+import Footer from '../../components/footer/Footer';
 
 const Box = styled.div`
     height: 100%;
@@ -13,6 +14,7 @@ const SearchContainer = () => {
     <Box>
       <SearchHeaderContainer />
       <SearchResultList />
+      <Footer />
     </Box>
   );
 };
