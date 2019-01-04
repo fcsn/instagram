@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
-import Button from '../../components/Button/Button';
+import Button from '../../elements/Button/Button';
 import Logo from '../../static/img/logo.png';
 
 const Box = styled.div`

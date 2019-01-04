@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../../components/Button/Button';
-import Input from '../../components/Input/Input';
+import Button from '../../elements/Button/Button';
+import Input from '../../elements/Input/Input';
 import Logo from '../../static/img/logo.png';
 
 const Box = styled.div`

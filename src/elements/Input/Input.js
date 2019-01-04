@@ -32,7 +32,7 @@ const Outline = styled.input`
   }
 `;
 
-const Button = ({
+const Input = ({
   children, borderColor, textColor, textOrder, background, placeholder, inputType,
 }) => {
   return (
@@ -40,7 +40,7 @@ const Button = ({
   );
 };
 
-Button.propTypes = {
+Input.propTypes = {
   children: PropTypes.string,
   borderColor: PropTypes.string,
   textColor: PropTypes.string,
@@ -49,7 +49,7 @@ Button.propTypes = {
   placeholder: PropTypes.string,
   inputType: PropTypes.string,
 };
-Button.defaultProps = {
+Input.defaultProps = {
   children: '',
   borderColor: null,
   textColor: null,
@@ -59,4 +59,4 @@ Button.defaultProps = {
   inputType: 'text',
 };
 
-export default Button;
+export default Input;

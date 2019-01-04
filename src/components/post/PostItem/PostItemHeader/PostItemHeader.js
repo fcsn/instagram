@@ -14,7 +14,7 @@ const Name = styled.div`
     height: 18px;
 `;
 
-const ItemHeader = styled.div`
+const ItemHeader = styled.div`;
     display: flex;
     padding: 8px 15px 8px 15px;
 `;
